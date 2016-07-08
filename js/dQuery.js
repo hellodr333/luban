@@ -11,7 +11,12 @@ $('.nav-btm-li').hover(function(){
 
 
 $('#searchBtn').click(function(e){
-	 $(this).toggleClass('on').next('.searchBox').stop().slideToggle();
+	 $(this).toggleClass('on').next('.searchBox').stop().fadeToggle();
+         e.stopPropagation();
+})
+
+$('#wechatBtn').click(function(e){
+	 $(this).toggleClass('on').next('img').stop().fadeToggle();
          e.stopPropagation();
 })
 

@@ -21,9 +21,9 @@ window.onload=function(){
 	var W=document.documentElement.clientWidth;
 	for(var i=0;i<aBannerImg.length;i++){
 		aBannerImg[i].style.width=W+'px';
-		aBannerImg[i].style.height=H-88+'px';
+		aBannerImg[i].style.height=H-172+'px';
 	};
-	aBannerUl.style.height=H-88+'px';
+	aBannerUl.style.height=H-172+'px';
 
 	window.onresize=function(){
 		var H=document.documentElement.clientHeight;
@@ -62,12 +62,12 @@ window.onload=function(){
 		aBannerLi[now].children[1].className='txt animated fadeInDown';
 	}
 
-	var timer=setInterval(next,3000);
+	var timer=setInterval(next,2000);
 	oBanner.onmouseover=function(){
 		clearInterval(timer);	
 	};
 	oBanner.onmouseout=function(){
-		timer=setInterval(next,3000);	
+		timer=setInterval(next,2000);	
 	};
 	// banner end
 

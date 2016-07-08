@@ -34,12 +34,12 @@ body{height:4000px;}
 .nav-btm-contact{width:136px;margin-top:56px;margin-right:70px;margin-left:70px;}
 .nav-btm-contact .search{position:relative;cursor:pointer;}
 .nav-btm-contact .search span{background:url(../images/search.png) no-repeat;display:inline-block;width:32px;height:32px;}
-.nav-btm-contact .search div{position:absolute;left:0;bottom:-276%;width:240px;height:40px;background:rgba(255,255,255,0.66);z-index: 888;display:none;}
+.nav-btm-contact .search div{position:absolute;left:-230%;bottom:-276%;width:240px;height:40px;background:rgba(255,255,255,0.66);z-index: 888;display:none;}
 .nav-btm-contact .search div input{width:200px;text-align:center;line-height:40px;background:none;color:white;font-size:14px;}
 .nav-btm-contact .search div button{background: url(../images/search.png) no-repeat left center;width:30px;height:40px;display:inline-block;border:0;}
-.nav-btm-contact .wechat{position:relative;margin-left:18px;margin-right:18px;}
+.nav-btm-contact .wechat{position:relative;margin-left:18px;margin-right:18px;cursor:pointer;}
 .nav-btm-contact .wechat span{background: url(../images/wechat.png) no-repeat;display:inline-block;width:32px;height:32px;}
-.nav-btm-contact .wechat img{display:none;position:absolute;left:0;bottom:-688%;z-index: 889;}
+.nav-btm-contact .wechat img{display:none;position:absolute;left:-215%;bottom:-688%;z-index: 889;}
 .nav-btm-contact .sina{background: url(../images/sina.png) no-repeat;display:inline-block;width:32px;height:32px;;}
 
 
@@ -80,14 +80,17 @@ body{height:4000px;}
 .news-top h4{width:130px;font-size:31px;color:#ff0000;border-bottom:2px solid #ff0000;padding-bottom:7px;margin:0 auto;}
 .news-btm{width:1200px;height:564px;margin:0 auto;overflow:hidden;position:relative;}
 .news-btm ul{width:108%;margin-top:136px;}
-.news-btm li{width:27%;background:white;margin-right:6%;}
+.news-btm li{width:27%;background:white;margin-right:6%;overflow:hidden;}
+.news-btm li:hover img{transform: scale(1.2);transition: all 1s ease;}
+.news-btm a:hover {background:gray;}
+.news-btm a:hover h3{color:white;}
+.news-btm a:hover p{color:white;}
 .news-btm li a{display:block;width:100%;}
-.news-btm .pic{}
-.news-btm .txt{width:100%;height:170px;background: white;}
+.news-btm .txt{width:100%;height:170px;}
 .news-btm .txt h3{text-align:center;padding:0 30px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size:17px;margin-bottom:47px;padding-top:57px;}
 .news-btm .txt p{text-align:center;}
 .news-btm .more{font-size:20px;margin-top:30px;display:block;text-align:right;height:70px;position:absolute;right:0;bottom:-7%;}
-.news-btm .more a{color:black;}
+
 
 /*achiv*/
 .achiv{height:978px;}
@@ -95,16 +98,16 @@ body{height:4000px;}
 .achiv-top h2{font-size:19px;padding-top:79px;}
 .achiv-top h3{font-size:45px;margin:12px 0 21px;}
 .achiv-top h4{width:130px;font-size:31px;color:#ff0000;border-bottom:2px solid #ff0000;padding-bottom:7px;margin:0 auto;}
-.achiv-btm{width:1780px;height:644px;margin:0 auto;}
-.achiv-btm-l{width:1082px;height:100%;}
-.achiv-btm-r{width:600px;height:100%;}
-.smallBanner{width:1082px;overflow:hidden;height:560px;position:relative;}
-.smallBanner ul{width:3246px;height:100%;position:relative;}
-.smallBanner li{width:1082px;height:100%;position:absolute;float:left;opacity:0;transition:.8s all ease;left:0;top:0;}
+.achiv-btm{padding:0 40px;height:644px;margin:0 auto;}
+.achiv-btm-l{width:60%;height:100%;}
+.achiv-btm-r{width:38%;height:100%;}
+.smallBanner{width:100%;overflow:hidden;height:560px;position:relative;}
+.smallBanner ul{width:100%;height:100%;position:relative;}
+.smallBanner li{height:100%;position:absolute;float:left;opacity:0;transition:.8s all ease;left:0;top:0;}
 .smallBanner li.cur{opacity:1;}
 .smallBanner li div{position:absolute;left:0;bottom:0;height:146px;background:rgba(0,0,0,.6);width:100%;color:white;}
-.smallBanner li div h4{color:white;height:68px;line-height:68px;font-size:26px;padding-left:42px;}
-.smallBanner li div p{color:white;font-size:18px;line-height:22px;padding:0 32px;}
+.smallBanner li div h4{color:white;height:68px;line-height:68px;font-size:26px;padding-left:42px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.smallBanner li div p{color:white;font-size:18px;line-height:22px;padding:0 32px;overflow:hidden;text-overflow: ellipsis;}
 .achiv-btm-l h3{height:86px;font-size:30px;padding-left:8px;line-height:86px;}
 .achiv-btm-l h3 span{font-size:17px;}
 .sBanner_prev{position:absolute;width:80px;height:80px;left:-80px;top:48%;margin-top:-40px;font-size:82px;transition:.8s all ease;color:white;cursor:pointer;}
@@ -115,6 +118,14 @@ body{height:4000px;}
 
 
 .achiv-btm-r h3{height:86px;font-size:30px;padding-left:8px;line-height:86px;}
-.iconPic{width:100%;}
-.iconPic ul{width:100%;padding-top:34px;}
-.iconPic li{width:50%;float:left;margin-bottom:56px;}
+.iconPic{width:100%;height:560px;position:relative;}
+.iconPic ul{width:100%;padding-top:34px;height:526px;}
+.iconPic li{width:50%;float:left;}
+.iconPic div{position:absolute;left:50%;margin-left:-48px;bottom:0;}
+.iconPic span{float:left;width:18px;height:18px;background:#ddd;border-radius:50%;margin-right:8px;}
+.iconPic span.cur{background:red;}
+
+
+
+
+
