@@ -1,6 +1,9 @@
 
 
 window.onload=function(){
+
+	new WOW().init();
+
 	var aBannerImg=document.getElementsByClassName('baner_img');
 	var aBannerUl=document.getElementById('banner_ul');
 	var aBannerLi=document.getElementsByClassName('banner_li');
@@ -105,8 +108,48 @@ window.onload=function(){
 	};
 
 	// small banner end
+	var oIconPicBox=document.getElementById('iconPicBox');
+	var oToggleIcon=document.getElementById('toggleIcon');
+	var oIconpic=document.getElementById('iconPic');
 
-	
+	var now3=0;
+	var timer3=setInterval(next3,2000);
+	oIconpic.onmouseover=function(){
+		clearInterval(timer3);
+	};
+	oIconpic.onmouseout=function(){
+		timer3=setInterval(next3,2000);	
+	}
 
+	function next3(){
+		now3++;
+		if(now3==oIconPicBox.children.length){
+			now3=0;
+		}
+		tab3();
+	}
+	function tab3(){
+		for(var i=0;i<oIconPicBox.children.length;i++){
+			oIconPicBox.children[i].className='iconPicFa';	
+			oToggleIcon.children[i].className='';
+
+		}
+		oIconPicBox.children[now3].className='iconPicFa cur';
+		oToggleIcon.children[now3].className='on';
+	}
+
+
+
+	top-banner
+	var oAdvt=document.getElementById('advt');
+	setTimeout(function(){
+		oAdvt.style.height=0;
+		oAdvt.children[0].style.display='none';
+	},3000)
+	var oClose=document.getElementById('close');
+	oClose.onclick=function(){
+		this.parentNode.style.height=0;
+		this.style.display='none';
+	}
 
 }
