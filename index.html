@@ -5,6 +5,7 @@
 	<title>鲁班软件</title>
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/rel-style.css">
 </head>
 <body>
 
@@ -17,13 +18,31 @@
 	<!-- nav start -->
 	<div class="navBar clearFix">
 		<div class="navBar-top">
-			<i class="fr"> 技术支持：400-920-3000</i>
-			<span class="fr">BIM合作：400-921-8880</span>
+			<div class="fr">
+				<span class="fl">BIM合作：400-921-8880</span>
+				<i class="fl"> 技术支持：400-920-3000</i>
+				<a class="fl car" href="javascript:;">在线购买</a>
+				<div class="regLogin fl">
+					<a href="javascript:;">注册</a>/
+					<strong id="login">登录</strong>
+					<div class="loginBox" id="loginBox">
+						<form action="">
+							<h5>鲁班通行证（电子鲁班论坛）账号</h5>
+							<input type="text" class="text" placeHolder="鲁班通行证账号" name="" />
+							<input type="password" class="password" placeHolder="请输入密码" name="" />
+							<p class="clearFix">
+								<input class="fl remberPass" type="checkbox" name="">&nbsp;&nbsp;记住密码
+								<a class="fr passfor" href="javascript:;">忘记密码？</a>
+							</p>
+							<input type="submit" class="submit" name="" value="登录">
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="nav-btm">
+		<div class="nav-btm w">
 			<a class="nav-btm-logo fl" href="javascript:;">
 				<span></span>
-				<h1>建造BIM领航者</h1>
 			</a>
 			<div class="nav-btm-right fr">
 				<ul class="nav-btm-list fl">
@@ -71,7 +90,7 @@
 						</a>
 						<ul class="nav-btm-sons">
 							<li><a href="javascript:;">BIM系统</a></li>
-							<li><a href="javascript:;">建模 * 算量</a></li>
+							<li><a href="javascript:;">建模*算量</a></li>
 							<li><a href="javascript:;">工程数据</a></li>
 						</ul>
 					</li>
@@ -99,7 +118,7 @@
 						</ul>
 					</li>
 				</ul>
-				<div class="nav-btm-contact fr">
+				<div class="nav-btm-contact mLeft fr">
 					<div class="search fl">
 						<span id="searchBtn"></span>
 						<div class="searchBox">
@@ -114,7 +133,6 @@
 						<span id="wechatBtn"></span>
 						<img src="images/wechat.png" alt="" width="184" height="184"/>
 					</p>
-					<a href="javascript:;" class="sina fl"></a>
 				</div>
 			</div>
 		</div>
@@ -125,32 +143,32 @@
 	<div class="banner" id="banner">
 		<ul id="banner_ul">
 			<li class="banner_li cur">
-				<div class="baner_img">
-					<img src="images/banner_1.jpg" width="100%" height="100%" alt="" />
+				<div class="baner_img banner1">
+					<!-- <img src="images/banner_1.jpg" width="100%" height="100%" alt="" /> -->
 				</div>
 				<div class="txt">
 					<span>17年专注，推动中国建筑业进入智慧建造时代</span>
 				</div>
 			</li>
 			<li class="banner_li">
-				<div class="baner_img">
-					<img src="images/banner_2.jpg" width="100%" height="100%" alt="" />
+				<div class="baner_img banner2">
+					<!-- <img src="images/banner_2.jpg" width="100%" height="100%" alt="" /> -->
 				</div>
 				<div class="txt">
 					<span>理论与实践并行，铸就品牌实力</span>
 				</div>
 			</li>
 			<li class="banner_li">
-				<div class="baner_img">
-					<img src="images/banner_3.jpg" width="100%" height="100%" alt="" />
+				<div class="baner_img banner3">
+					<!-- <img src="images/banner_3.jpg" width="100%" height="100%" alt="" /> -->
 				</div>
 				<div class="txt">
 					<span>时间铸就专业，创新创造价值</span>
 				</div>
 			</li>
 			<li class="banner_li">
-				<div class="baner_img">
-					<img src="images/banner_4.jpg" width="100%" height="100%" alt="" />
+				<div class="baner_img banner4">
+					<!-- <img src="images/banner_4.jpg" width="100%" height="100%" alt="" /> -->
 				</div>
 				<div class="txt">
 					<span>鲁班BIM，企业级BIM平台领导者</span>
@@ -167,7 +185,7 @@
 		<div class="product-top wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
 			<h2>LUBANSOFT</h2>
 			<h3>PRODUCT</h3>
-			<H4>产业中心</H4>
+			<H4>产品中心</H4>
 		</div>
 		<div class="product-btm">
 			<ul class="clearFix">
@@ -176,7 +194,16 @@
 						<div class="pic">
 							<img src="images/pro-left.jpg" width="100%" height="100%" alt=""/>
 						</div>
-						<p>BIM 系统</p>
+						<div class="proPosition">
+							<h3>BIM 系统</h3>
+							<div>
+								<p>鲁班BIM优势</p>
+								<p>鲁班工程基础数据分析</p>
+								<p>鲁班管理驾驶舱</p>
+								<p>鲁班多专业集成平台</p>
+								<p>...</p>
+							</div>
+						</div>
 					</a>
 				</li>
 				<li style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;" class="fl wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.4s">
@@ -184,7 +211,16 @@
 						<div class="pic">
 							<img src="images/pro-center.jpg" width="100%" height="100%" alt=""/>
 						</div>
-						<p>建模 算量</p>
+						<div class="proPosition">
+							<h3>建模 算量</h3>
+							<div>
+								<p>鲁班土建</p>
+								<p>鲁班钢筋</p>
+								<p>鲁班安装</p>
+								<p>鲁班多专业集成平台</p>
+								<p>...</p>
+							</div>
+						</div>
 					</a>
 				</li>
 				<li style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;" class="fl wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -192,7 +228,16 @@
 						<div class="pic">
 							<img src="images/pro-right.jpg" width="100%" height="100%" alt=""/>
 						</div>
-						<p>工程数据</p>
+						<div class="proPosition">
+							<h3>工程数据</h3>
+							<div>
+								<p>鲁班企业定额系统</p>
+								<p>鲁班通</p>
+								<p>鲁班笔记</p>
+								<p>鲁班造价</p>
+								<p>...</p>
+							</div>
+						</div>
 					</a>
 				</li>
 			</ul>
@@ -205,60 +250,63 @@
 		<div class="news-top wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
 			<h2>LUBANSOFT</h2>
 			<h3>NEWS</h3>
-			<H4>新闻中心</H4>
+			<h4>新闻中心</h4>
 		</div>
-		<div class="news-btm">
+		<div class="news-btm otherCan">
 			<ul style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;" class="clearFix fl wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.5s">
-				<li class="fl">
+				<li class="fl otherW">
 					<a href="javascript:;">
 						<div class="pic">
-							<img src="images/news_left.jpg" alt="" width="100%" height="">
+							<img src="images/news-left.jpg" alt="" width="100%" />
 						</div>
 						<div class="txt">
-							<h3>2016BIM应用技能 师资培训班开班 </h3>
+							<h3>2016BIM应用技能</h3>
+							<h4>师资培训班开班</h4>
 							<p>2016/05/13</p>
 						</div>
 					</a>
 				</li>
-				<li class="fl">
+				<li class="fl otherW">
 					<a href="javascript:;">
 						<div class="pic">
-							<img src="images/news_center.jpg" alt="" width="100%"/>
+							<img src="images/news-center.jpg" width="100%" alt="" />
 						</div>
 						<div class="txt">
 							<h3>营改增时代企业造价管理新思维——暨鲁班企业级造价管理系统新品发布会隆重丼行  </h3>
+							<h4>造价管理系统新品发布会隆重丼行  </h4>
 							<p>2016/05/13</p>
 						</div>
 					</a>
 				</li>
-				<li class="fl">
+				<li class="fl noMargin otherW">
 					<a href="javascript:;">
-						<div class="pic">
-							<img src="images/news_right.jpg" alt="" width="100%" >
+						<div class="pic"> 
+							<img src="images/news-right.jpg" width="100%" alt="" />
 						</div>
 						<div class="txt">
 							<h3>杨宝明博士受邀亍同济大学 作《BIM改变建筑业》主题讲座 </h3>
+							<h4>作《BIM改变建筑业》主题讲座 </h4>
 							<p>2016/05/13</p>
 						</div>
 					</a>
 				</li>
 			</ul>
-			<div class="more"><a href="javascript:;">更多</a></div>
 		</div>
+		<div class="more"><a href="javascript:;">更多</a></div>
 	</div>
 	<!-- news end -->
 
 	<!-- achievement start -->
-	<div class="achiv">
+	<div class="achiv achivCanH">
 		<div class="achiv-top wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
 			<h2>LUBANSOFT</h2>
 			<h3>ACHIEVEMENTS</h3>
 			<H4>成果展示</H4>
 		</div>
-		<div class="achiv-btm clearFix">
+		<div class="achiv-btm clearFix achivOtherCan">
 			<div class="achiv-btm-l fl">
 				<h3>BIM 案例&nbsp;&nbsp;&nbsp;<span>BIM CASE</span></h3>
-				<div class="smallBanner" id="smallBanner">
+				<div class="smallBanner smallBannerH" id="smallBanner">
 					<ul class="clearFix">
 						<li class="cur">
 							<a href="javascript:;">
@@ -294,7 +342,7 @@
 			</div>
 			<div class="achiv-btm-r fr">
 				<h3>服务客户&nbsp;&nbsp;&nbsp;CUSTOMER</h3>
-				<div class="iconPic" id="iconPic">
+				<div class="iconPic iconPicH" id="iconPic">
 					<ul id="iconPicBox">
 						<li class="iconPicFa cur">
 							<ul class="iconList">
@@ -513,7 +561,7 @@
 	            <li>电话：021-35885000</li>
 	            <li>传真：021-3588 5000×8028</li>
 	            <li>E-mail:bim@lubansoft.com</li> 
-	            <li class="w_1360"><img src="img/gswj.png" /><span>沪公网备案31011002000022号</span></li>
+	            <li class="w_1360"><!-- <img src="img/gswj.png" /> --><span>沪公网备案31011002000022号</span></li>
 	        </ul>
 	    </div>
 	</footer>

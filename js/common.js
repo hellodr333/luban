@@ -22,20 +22,21 @@ window.onload=function(){
 
 	var H=document.documentElement.clientHeight;
 	var W=document.documentElement.clientWidth;
+	console.log(H)
 	for(var i=0;i<aBannerImg.length;i++){
 		aBannerImg[i].style.width=W+'px';
-		aBannerImg[i].style.height=H-172+'px';
+		aBannerImg[i].style.height=H-112+'px';
 	};
-	aBannerUl.style.height=H-172+'px';
+	aBannerUl.style.height=H-112+'px';
 
 	window.onresize=function(){
 		var H=document.documentElement.clientHeight;
 		var W=document.documentElement.clientWidth;
 		for(var i=0;i<aBannerImg.length;i++){
 			aBannerImg[i].style.width=W+'px';
-			aBannerImg[i].style.height=H-172+'px';
+			aBannerImg[i].style.height=H-112+'px';
 		};
-		aBannerUl.style.height=H-172+'px';
+		aBannerUl.style.height=H-112+'px';
 	}
 	
 
@@ -65,12 +66,12 @@ window.onload=function(){
 		aBannerLi[now].children[1].className='txt animated fadeInDown';
 	}
 
-	var timer=setInterval(next,2000);
+	var timer=setInterval(next,3000);
 	oBanner.onmouseover=function(){
 		clearInterval(timer);	
 	};
 	oBanner.onmouseout=function(){
-		timer=setInterval(next,2000);	
+		timer=setInterval(next,3000);	
 	};
 	// banner end
 

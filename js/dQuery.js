@@ -2,7 +2,6 @@
 
 // nav
 $('.nav-btm-li').hover(function(){
-	console.log($(this));
 	$(this).addClass('ok').find('.nav-btm-sons').stop(true,true).slideUp(0).slideDown(300);
 },function(){
 	$('.ok').find('.nav-btm-sons').stop(true,true).slideUp(200);
@@ -20,12 +19,21 @@ $('#wechatBtn').hover(function(e){
          e.stopPropagation();
 })
 
+$(".searchBox").click(function(e){
+     e.stopPropagation();
+ })
  $("body").click(function(){
      $(".searchBox").fadeOut();
+     $('#loginBox').fadeOut();
  })
 
-
-
+$('#login').click(function(e){
+	$('#loginBox').stop().fadeToggle();
+	e.stopPropagation();
+})
+$('#loginBox').click(function(e){
+     e.stopPropagation();
+ })
 
 
 
