@@ -6,9 +6,9 @@
 }
 
 @media only screen and (max-width: 1440px){
-	.news-btm li.otherW{width:360px;background:white;margin-right:45px;overflow:hidden;height:100%;}
+	/*.news-btm li.otherW{width:360px;background:white;margin-right:45px;overflow:hidden;height:100%;}
 	div.otherCan{width:1170px;height:480px;margin:0 auto;overflow:hidden;}
-	.news-btm .txt h3{margin-top:0;}
+	.news-btm .txt h3{margin-top:0;}*/
 	div.achivOtherCan{width:1170px;height:426px;}
 	.achiv-btm-l{width:738px;height:100%;}
 	.achiv-btm-r{width:402px;height:100%;}

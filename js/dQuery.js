@@ -28,13 +28,19 @@ $(".searchBox").click(function(e){
  })
 
 $('#login').click(function(e){
+
 	$('#loginBox').stop().fadeToggle();
+	$('#userName').focus();
 	e.stopPropagation();
 })
 $('#loginBox').click(function(e){
      e.stopPropagation();
  })
 
+
+$('#submit').click(function(){
+	$('#loginBox').stop().fadeToggle();
+})
 
 
 
