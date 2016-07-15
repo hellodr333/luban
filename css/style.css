@@ -49,6 +49,7 @@ img{display:block;}
 .nav-btm{height:88px;margin:0 auto;width:1600px;min-width:1180px;}
 .nav-btm-list{margin-top:26px;}
 .nav-btm-li{float:left;width:100px;}
+.nav-btm-list li.width68{width:68px;}
 .nav-btm-li a{display:block;line-height:38px;height:38px;text-align: center;font-size:16px;width:100%;}
 .nav-btm-sons a{font-size:14px;width:100%;}
 .nav-btm-sons{border:1px solid #ddd;position:relative;z-index: 8888;background:white;border-top: none;width:100%;box-sizing:border-box;}
