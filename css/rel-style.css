@@ -29,5 +29,6 @@
 	.product-btm { height: 260px;}
 	.proPosition h3 {line-height: 260px;}
 	.proPosition div { margin-top: 60px;}
-	   
+	.smallBanner li div{height:114px;}
+	.smallBanner li div p{white-space: nowrap;}  
 }
