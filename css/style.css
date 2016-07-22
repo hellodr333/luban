@@ -1,6 +1,6 @@
 /*clear default style*/
 body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input { margin: 0; padding: 0; border: 0;color:#000000; }
-body { font-size: 14px; font-family:"微软雅黑", "宋体"; }
+body { font-size: 14px; font-family:"微软雅黑", "宋体";overflow-x: hidden; }
 ul, ol ,li{ list-style: none; }
 select, input, img { vertical-align: middle; outline: none; }
 a { text-decoration: none; }
@@ -15,11 +15,11 @@ img{display:block;}
 
 
 /*loading*/
-.loading{position:fixed;left:0;top:0;width:100%;height:100%;background:url(../images/top_banner.jpg) no-repeat;}
+.loading{position:fixed;left:0;top:0;width:100%;height:100%;background:url(../images/loadlogo.png) no-repeat center center;}
 
 
 /*top banner start*/
-.advt{background:url(../images/top_banner.jpg) no-repeat left center;height:580px;width:100%;transition:.8s all ease;position:relative;}
+.advt{background:url(../images/top_banner.jpg) no-repeat left center;height:580px;width:100%;transition:.8s all ease;position:relative;z-index: 999;}
 .advt span{position:absolute;right:2%;top:0;font-size:64px;cursor:pointer;}
 /*top banner end*/
 
@@ -72,24 +72,11 @@ img{display:block;}
 
 
 /*banner*/
-.banner{position:relative;width:100%;}
-.banner1{background: url(../images/banner_1.jpg) no-repeat center top;width:100%;height:100%;}
-.banner2{background: url(../images/banner_2.jpg) no-repeat center top;width:100%;height:100%;}
-.banner3{background: url(../images/banner_3.jpg) no-repeat center top;width:100%;height:100%;}
-.banner4{background: url(../images/banner_4.jpg) no-repeat center top;width:100%;height:100%;}
-.banner_prev{cursor:pointer;position:absolute;width:31px;height:51px;left:-51px;top:48%;margin-top:-25px;transition:.8s all ease;background:url(../images/white-arrow-l.png) no-repeat;}
-.banner_next{cursor:pointer;position:absolute;width:31px;height:51px;right:-51px;top:48%;margin-top:-25px;transition:.8s all ease;background:url(../images/white-arrow-r.png) no-repeat;}
-.banner:hover .banner_prev{left:3%;}
-.banner:hover .banner_next{right:3%;}
-.banner_prev:hover{color:#000;background:url(../images/blue-arrow-l.png) no-repeat;}
-.banner_next:hover{color:#000;background:url(../images/blue-arrow-r.png) no-repeat;}
-.banner li{position:absolute;opacity:0;left:0;top:0;transition:1s all ease;}
-.banner li.cur{opacity:1;}
-.banner ul{position:relative;}
-.baner_img{width:100%;}
-.banner_li .txt{position:absolute;left:0;top:50%;margin-top:-105px;height:210px;line-height:210px;font-size:48px;color:white;background-color: rgba(0,0,0,0.3);width:100%;text-align:center;}
-
-
+*{padding:0;margin:0;}
+.banner{width:100%;height:570px;background:red;position:relative;}
+.videoContainer{ position: absolute;top: 0px;left: 50%;max-width: initial;width: 1920px;height:100%;margin-left: -960px;overflow:hidden;
+}
+.video-element{ object-fit: initial;width:100%;}
 
 /*product*/
 .product-top{height:260px;text-align:center;color:#d2d2d2;}

@@ -16,3 +16,18 @@
 	.iconPicH{height:383px;}
 	.achivCanH{height:786px;}
 }
+
+@media only screen and (max-width: 1280px){
+	.banner{height:470px;}
+	.product-top, .news-top, .achiv-top{height:220px;}
+	.product-top h2, .news-top h2, .achiv-top h2{padding-top:43px;}
+
+	.news{height:740px;}
+	.news-btm{width:1130px;}
+	.news-btm ul{height: 360px;}
+	.news-btm li {width: 350px;}
+	.product-btm { height: 260px;}
+	.proPosition h3 {line-height: 260px;}
+	.proPosition div { margin-top: 60px;}
+	   
+}
