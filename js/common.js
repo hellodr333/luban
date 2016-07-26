@@ -74,12 +74,6 @@ window.onready=function(){
 		oIconPicBox.children[now3].className='iconPicFa cur';
 		oToggleIcon.children[now3].className='on';
 	}
-	console.log(document.documentElement.clientHeight)
-	// function bannerH(){
-	// 	var H=document.documentElement.clientHeight;
-	// 	var oBanner=document.getElementById('banner');
-	// 	oBanner.style.height=H-112-260+'px';
-	// }
-	// bannerH();
+
 }
 
