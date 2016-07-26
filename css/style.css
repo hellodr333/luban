@@ -45,7 +45,7 @@ img{display:block;}
 
 
 
-.nav-btm-logo span{background:url(../images/logo.png) ;display:inline-block;width:354px;height:62px;margin-top:13px;}
+.nav-btm-logo span{background:url(../images/logo.png) ;display:inline-block;width:354px;height:62px;margin-top:13px;text-indent:-99999999em;}
 .nav-btm{height:88px;margin:0 auto;width:1600px;min-width:1180px;}
 .nav-btm-list{margin-top:26px;}
 .nav-btm-li{float:left;width:100px;}
@@ -76,8 +76,8 @@ img{display:block;}
 .banner{width:100%;height:570px;position:relative;}
 .videoContainer{ position: absolute;top: 0px;left: 50%;max-width: initial;width: 1920px;height:100%;margin-left: -960px;overflow:hidden;
 }
-.video-element{ object-fit: initial;width:100%;}
-
+.video-element{ object-fit: initial;width:100%;position: absolute;top: -50%;}
+.banner .video-light{background:url(../images/video-light1.png) repeat;width:100%;height:100%;position:absolute;left:0;top:0;}
 /*product*/
 .product-top{height:260px;text-align:center;color:#d2d2d2;}
 .product-top h2{font-size:30px;padding-top:80px;color:#d2d2d2;}

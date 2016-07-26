@@ -42,9 +42,7 @@ $('#submit').click(function(){
 	$('#loginBox').stop().fadeToggle();
 })
 
- $(window).load(function() {
-        $(".loading").fadeOut();
- });
+ 
 
 
 
